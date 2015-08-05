@@ -52,7 +52,7 @@ public class OgmTest {
     }
 
     private static void printDbContents() {
-        final GraphDatabaseService graphDb = new GraphDatabaseFactory().newEmbeddedDatabase("C:/TEMP/ogm-neo4j");
+        final GraphDatabaseService graphDb = new GraphDatabaseFactory().newEmbeddedDatabase("/tmp/neo4j_sample");
         final Transaction tx = graphDb.beginTx();
         try {
             for (final Node node : GlobalGraphOperations.at(graphDb).getAllNodes()) {

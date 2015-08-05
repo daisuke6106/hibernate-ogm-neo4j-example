@@ -8,7 +8,7 @@
         <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
         <properties>
             <property name="hibernate.ogm.datastore.provider" value="neo4j_embedded"/>
-            <property name="hibernate.ogm.neo4j.database_path" value="${graphdb.path}" />
+            <property name="hibernate.ogm.neo4j.database_path" value="/tmp/neo4j_sample" />
             <property name="hibernate.search.default.directory_provider" value="ram" />
         </properties>
     </persistence-unit>
@@ -17,7 +17,7 @@
         <provider>org.hibernate.ogm.jpa.HibernateOgmPersistence</provider>
         <properties>
             <property name="hibernate.ogm.datastore.provider" value="neo4j_embedded"/>
-            <property name="hibernate.ogm.neo4j.database_path" value="${graphdb.path}" />
+            <property name="hibernate.ogm.neo4j.database_path" value="/tmp/neo4j_sample" />
             <property name="hibernate.search.default.directory_provider" value="ram" />
         </properties>
     </persistence-unit>
